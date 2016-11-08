@@ -11,7 +11,9 @@ namespace Hello.World
             //Opgave2();
             //Opgave3();
             //Opgave4();
-            Opgave5();
+            //Opgave5();
+            //Opgave6();
+            Opgave7();
         }
         public static void Opgave1()
         {
@@ -51,5 +53,30 @@ namespace Hello.World
             Console.WriteLine(a*b);
             Console.ReadKey();
         }
+        public static void Opgave6()
+        {
+            Console.WriteLine("Indtast første tal: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Indtast andet tal: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Indtast tredje tal: ");
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(a * b * c);
+            Console.ReadKey();
+        }
+        public static void Opgave7()
+        {
+            Console.WriteLine("Indtast første tal: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Indtast andet tal: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(a + " + " + b + " = " + (a + b));
+            Console.WriteLine(a + " - " + b + " = " + (a - b));
+            Console.WriteLine(a + " x " + b + " = " + (a * b));
+            Console.WriteLine(a + " / " + b + " = " + (a / b));
+            Console.WriteLine(a + " mod " + b + " = " + (a % b));
+            Console.ReadKey();
+        }
+
     }
 }
