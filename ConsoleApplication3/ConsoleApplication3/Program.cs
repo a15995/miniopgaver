@@ -15,7 +15,9 @@ namespace Hello.World
             //Opgave6();
             //Opgave7();
             //Opgave8();
-            Opgave9();
+            //Opgave9();
+            //Opgave10();
+            Opgave11();
         }
         public static void Opgave1()
         {
@@ -100,6 +102,25 @@ namespace Hello.World
             Console.WriteLine("Indtast tredje tal: ");
             double d = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine((a + b + c + d) / 4);
+            Console.ReadKey();
+        }
+        public static void Opgave10()
+        {
+            Console.WriteLine("Indtast første tal: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Indtast andet tal: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Indtast tredje tal: ");
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine((a + b) * c);
+            Console.WriteLine(a * c + b - c);
+            Console.ReadKey();
+        }
+        public static void Opgave11()
+        {
+            Console.WriteLine("Hvad er din alder? ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Du ser yngre ud end " + a + "!");
             Console.ReadKey();
         }
     }
