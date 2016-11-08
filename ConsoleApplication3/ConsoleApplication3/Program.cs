@@ -17,7 +17,10 @@ namespace Hello.World
             //Opgave8();
             //Opgave9();
             //Opgave10();
-            Opgave11();
+            //Opgave11();
+            //Opgave12();
+            //Opgave13();
+            Opgave14();
         }
         public static void Opgave1()
         {
@@ -34,9 +37,7 @@ namespace Hello.World
         public static void Opgave3()
         {
             //her er opgave 3
-            double a = 24;
-            double b = 5;
-            double x = a / b;
+            double x = (float)24 / (float)5;
             Debug.WriteLine(x);
         }
         public static void Opgave4()
@@ -121,6 +122,59 @@ namespace Hello.World
             Console.WriteLine("Hvad er din alder? ");
             int a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Du ser yngre ud end " + a + "!");
+            Console.ReadKey();
+        }
+        public static void Opgave12()
+        {
+            int n;
+
+            Console.WriteLine("Indtast et tal: ");
+            n = Convert.ToInt32(Console.ReadLine());
+
+            // Part A: "n n n n" using Write
+            Console.Write(n);
+            Console.Write(" ");
+            Console.Write(n);
+            Console.Write(" ");
+            Console.Write(n);
+            Console.Write(" ");
+            Console.Write(n);
+            Console.WriteLine();
+
+            // Part B: "nnnn" using Write
+            Console.Write(n);
+            Console.Write(n);
+            Console.Write(n);
+            Console.WriteLine(n);
+            Console.WriteLine();
+
+            // Part C: "n n n n" using {0}
+            Console.WriteLine("{0} {0} {0} {0}", n);
+
+            // Part D: "nnnn" using {0}
+            Console.WriteLine("{0}{0}{0}{0}", n);
+            Console.ReadKey();
+        }
+        public static void Opgave13()
+        {
+            int x;
+
+            Console.Write("Enter a number: ");
+            x = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("{0}{0}{0}", x);
+            Console.WriteLine("{0} {0}", x);
+            Console.WriteLine("{0} {0}", x);
+            Console.WriteLine("{0} {0}", x);
+            Console.WriteLine("{0}{0}{0}", x);
+            Console.ReadKey();
+        }
+        public static void Opgave14()
+        {
+            Console.WriteLine("Indtast celcius: ");
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Kelvin: " + (c + 273));
+            Console.WriteLine("Fahrenheit: " + ((c * 18 / 10) + 32));
             Console.ReadKey();
         }
     }
