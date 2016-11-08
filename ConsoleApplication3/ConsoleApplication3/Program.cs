@@ -13,7 +13,8 @@ namespace Hello.World
             //Opgave4();
             //Opgave5();
             //Opgave6();
-            Opgave7();
+            //Opgave7();
+            Opgave8();
         }
         public static void Opgave1()
         {
@@ -42,7 +43,7 @@ namespace Hello.World
             int b = (24 + 5) % 7;
             int c = 15 + -4 * 6 / 11;
             int d = 2 + 10 / 6 * 1 - 7 % 2;
-            Debug.WriteLine(a + " " + b + " " + c + " "+ d);
+            Debug.WriteLine(a + " " + b + " " + c + " " + d);
         }
         public static void Opgave5()
         {
@@ -50,7 +51,7 @@ namespace Hello.World
             int a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Indtast andet tal: ");
             int b = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(a*b);
+            Console.WriteLine(a * b);
             Console.ReadKey();
         }
         public static void Opgave6()
@@ -77,6 +78,15 @@ namespace Hello.World
             Console.WriteLine(a + " mod " + b + " = " + (a % b));
             Console.ReadKey();
         }
-
+        public static void Opgave8()
+        {
+            Console.WriteLine("Indtast tal: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < 11; i++)
+            {
+                Console.WriteLine("5 * " + i + " = " + (5 * i));
+            }
+            Console.ReadKey();
+        }
     }
 }
