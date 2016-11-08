@@ -14,7 +14,8 @@ namespace Hello.World
             //Opgave5();
             //Opgave6();
             //Opgave7();
-            Opgave8();
+            //Opgave8();
+            Opgave9();
         }
         public static void Opgave1()
         {
@@ -86,6 +87,19 @@ namespace Hello.World
             {
                 Console.WriteLine("5 * " + i + " = " + (5 * i));
             }
+            Console.ReadKey();
+        }
+        public static void Opgave9()
+        {
+            Console.WriteLine("Indtast første tal: ");
+            double a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Indtast andet tal: ");
+            double b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Indtast tredje tal: ");
+            double c = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Indtast tredje tal: ");
+            double d = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine((a + b + c + d) / 4);
             Console.ReadKey();
         }
     }
