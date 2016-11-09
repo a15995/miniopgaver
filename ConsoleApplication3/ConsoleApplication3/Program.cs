@@ -20,7 +20,8 @@ namespace Hello.World
             //Opgave11();
             //Opgave12();
             //Opgave13();
-            Opgave14();
+            //Opgave14();
+            YmerDeath();
         }
         public static void Opgave1()
         {
@@ -175,6 +176,25 @@ namespace Hello.World
             int c = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Kelvin: " + (c + 273));
             Console.WriteLine("Fahrenheit: " + ((c * 18 / 10) + 32));
+            Console.ReadKey();
+        }
+        public static void YmerDeath()
+        {
+            for (int i = 0; i < 3; i++)
+            { 
+                Console.WriteLine("For hvor lang tid siden er svinet faldet (sek)? ");
+                float t = Convert.ToInt32(Console.ReadLine());
+                float d = ((float)0.5 * (float)9.81 * (t * t));
+            
+                if (d >= 140)
+                {
+                    Console.WriteLine("PLASK!");
+                }
+                else
+                {
+                    Console.WriteLine("Staklen er faldet " + d + " meter!");
+                }
+            }
             Console.ReadKey();
         }
     }
